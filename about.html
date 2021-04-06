@@ -56,6 +56,7 @@
             color: blue;
             font-size: 24px;
             padding: 20px;
+
         }
 
         .main-header {
@@ -123,10 +124,37 @@
             background: lightblue;
             padding: 5px;
         }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            body {
+                background-color: pink;
+            }
+        }   
+        
+         .content {
+            display: flex;
+            justify-content: center;
+         }
+        }
     </style>
 </head>
 
 <body>
+    <div class="content">
+
     <div class="nav-header">
         <img class="logo-images" src="images/resumelogo.jpg" alt="resumelogo.jpg">
         <div class="nav-div">
