@@ -123,22 +123,34 @@
             background: lightblue;
             padding: 5px;
         }
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-        }
-        
-
         @media only screen and (max-width: 600px) {
-            body {
-                background-color: lightblue;
-            }
-        @media only screen and (min-width: 601px) {
-            body {
-                background-color: pink;
-            }
+        .nav-header {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            height: 300px;
+        }
+        .logo-images {
+            width: 40%;
+        }
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+        }
+        .nav-bar-list {
+            margin-top: 2px;
+            background-color: pink;
+            margin-right: 10px;
+        }
+        .main-header-intro {
+            width:100%;
+        }
+        .box {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10%;
+        }
         .content {display: flex;
             justify-content: center;
             }
@@ -154,7 +166,7 @@
             <ul class="nav-bar">
                 <li class="nav-bar-list"><a
                 class="nav-bar-link" href="index.html">Home</a></li>
-                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">internship Experience</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">Internship Experience</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="about.html">About</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="example.html">Example</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="Contact.html">Contact </a></li>
@@ -166,7 +178,6 @@
     </div>
 
     <div class="main-header">
-        <h1 class="main-header-title">Resumé</h1>
         <div class="main-header-intro">
             Want to save time and have your resume ready in 5 minutes? Try our resume builder. It’s fast and easy to use
 

@@ -69,7 +69,6 @@
             text-transform: uppercase;
             font-weight: normal;
             padding: 50px;
-            background: url("images/th.jfif");
         }
 
         .main-header-intro {
@@ -120,24 +119,34 @@
             background: lightblue;
             padding: 5px;
         }
-        .content {
+       @media only screen and (max-width: 600px) {
+        .nav-header {
             display: flex;
-            justify-content: center;
             flex-direction: column;
-
+            background-color: pink;
+            height: 300px;
         }
-        
-         @media only screen and (max-width: 600px) {
-            body {
-                background-color: lightblue;
-            }
-        @media only screen and (min-width: 601px) {
-            body {
-                background-color: pink;
-            }
-        .content {display: flex;
-            justify-content: center;
-            }
+        .logo-images {
+            width: 40%;
+        }
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+        }
+        .nav-bar-list {
+            margin-top: 2px;
+            background-color: darkblue;
+            margin-right: 10px;
+        }
+        .main-header-intro {
+            width:100%;
+        }
+        .box {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10%;
+        }
         
         }
     </style>
@@ -150,7 +159,7 @@
             <ul class="nav-bar">
                 <li class="nav-bar-list"><a
                 class="nav-bar-link" href="index.html">Home</a></li>
-                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">internship Experience</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">Internship Experience</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="about.html">About</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="#">Explore More</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="Contact.html">Contact </a></li>
@@ -163,7 +172,6 @@
 
     <div class="main-header">
         
-        <img src="images/th.jfif" alt="th.jfif">
         <div class="main-header-intro">
              
         </div>
@@ -184,13 +192,7 @@
         </div>
         <!-- End of class .card -->
 
-        <div class="card">
-            <img src="images/resume build.png" alt="resume build.png">
-            <p>
-                I made a lot of resume, because I have 4 years work experience in retails, I worked as a cashier, backroom, sales floor. 
-            </p>
-            
-        </div>
+        
         <!-- End of class .card -->
 
         <div class="card">

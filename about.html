@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Resume</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
 
@@ -37,11 +38,7 @@
             margin: auto;
         }
 
-        .logo-img {
-            width: 120px;
-            margin-left: 20px;
-            display: flex;
-        }
+        
 
         .search-icon {
             margin: 30px;
@@ -62,7 +59,7 @@
         .main-header {
             background: url("images/resue1.jpg") top;
             background-size: cover;
-            height: : 250px;
+            height: 250px;
         }
 
         .main-header-title {
@@ -93,7 +90,6 @@
         .button {
             display: block;
             color: white;
-            size: 2px;
             background-color: black;
             box-shadow: 2px 2px blue;
             margin-left: 250px;
@@ -115,7 +111,7 @@
             border-radius: 1px;
             border: 2px blue;
             margin: 10px;
-            background-color: blue(235,241,238);
+            background-color: blue;
             box-shadow: 5px 7px 9px blue;
         }
 
@@ -124,44 +120,48 @@
             background: lightblue;
             padding: 5px;
         }
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-        }
         
 
         @media only screen and (max-width: 600px) {
-            body {
-                background-color: lightblue;
-            }
+        .nav-header {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+            height: 300px;
+        }
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+        }
+        .nav-bar-list {
+            margin-top: 2px;
+            background-color: purple;
+            margin-right: 10px;
+        }
+        .main-header-intro {
+            width:100%;
+        }
+        .box {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10%;
+        }
         }
 
-        @media only screen and (min-width: 601px) {
-            body {
-                background-color: pink;
-            }
-        }   
-        
-         .content {
-            display: flex;
-            justify-content: center;
-         }
-        }
     </style>
 </head>
 
 <body>
-    <div class="content">
+   
 
     <div class="nav-header">
-        <img class="logo-images" src="images/resumelogo.jpg" alt="resumelogo.jpg">
+        
         <div class="nav-div">
             <ul class="nav-bar">
                 <li class="nav-bar-list"><a
                 class="nav-bar-link" href="index.html">Home</a></li>
-                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">internship Experience</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">Internship Experience</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="about.html">About</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="example.html">Example</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="Contact.html">Contact </a></li>
@@ -173,10 +173,15 @@
     </div>
 
     <div class="main-header">
-        <h1 class="main-header-title">Resume</h1>
+        
         <div class="main-header-intro">
-             Resume is a brief written account of personal, educational, and professional qualifications and experience, as that prepared by an applicant for a job.
-            The important of the resume is giving an initial impression of the person and shows the personal skills.
+            <p>
+             The basic elements of the resume “About Me” section are your: </p>
+             <ul>
+                 <li>Professional title</li>
+                 <li>Relevant skills and qualifications</li>
+                 <li>Career goals</li>
+             </ul>
         </div>
     </div>
 
@@ -186,19 +191,28 @@
 
     <div class="box">
         <div class="card">
-            <img src="images/resume.jpg" alt="resume.jpg">
+            <img src="images/images.jfif" alt="images.jfif">
            
             <p>
-            The purpose of a resume is to introduce yourself to employers, present your qualifications, and secure an interview. </p>
+             How to write an "About Me" in a resume? </p>
+             <ul>
+                 <li>Introduce yourself
+                First, introduce yourself to prospective employers by mentioning:
+                Your professional title. For example, “sales manager”, “barista”, or “graphic designer”. In case you don’t have a professional title yet, you can simply say you’re a “college student” or “entry-level professional”.
+                Your background information. Summarize a bit about your current job. If you’re presently enrolled in school or are a recent graduate, then include your school’s name here.</li>
+             </ul>
             
         </div>
         <!-- End of class .card -->
 
         <div class="card">
-            <img src="images/resume build.png" alt="resume build.png">
+            <img src="images/step1.jpg" alt="step1.jpg">
             <p>
-                The goal of writing a resume is to showcase your experience, education, and skills in a standardized format which is easy for recruiters to read.
+                Highlight relevant qualifications
             </p>
+            <ul>
+                <li>Briefly mention one or two of your most relevant resume skills and achievements. This is one of the most important parts of the “About Me” section, as it immediately highlights your professional strengths and makes you a more attractive candidate.</li>
+            </ul>
             
         </div>
         <!-- End of class .card -->
@@ -207,12 +221,10 @@
             <img src="images/Resume3.jpg" alt="Resume3.jpg">
             
             <p>
-                The most effective objective is one that is tailored to the job you are applying for.
+                Summarize your career goals
             </p>
             <ul>
-                <li>It states what kind of career you are seeking</li>
-                <li>what skills and experiences you have that make you ideal for that career</li>
-                <li>include where you have been and where you want to go in your career.</li>
+                <li>Summarize how the position you’re applying to fits into your overall career ambitions, and briefly explain why you’re passionate about the job.Employers love to see candidates who are genuinely excited about their work and are interested in sticking around for the long-term. Passionate employees are more likely to make significant contributions to the work being done by the company and go on to manage or train other employees, rather than leaving after a year.
             </ul>
         </div>
         <!-- End of class .card -->

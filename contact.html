@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Resume</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
 
@@ -124,24 +125,37 @@
             background: lightblue;
             padding: 5px;
         }
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-        }
+    
         
 
         @media only screen and (max-width: 600px) {
-            body {
-                background-color: lightblue;
-            }
+        .nav-header {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+            height: 300px;
         }
-
-        @media only screen and (min-width: 601px) {
-            body {
-                background-color: pink;
-            }
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            background-color: pink;
+        }
+        .logo-images {
+            width: 40%;
+        }
+        .nav-bar-list {
+            margin-top: 2px;
+            background-color: yellow;
+            margin-right: 10px;
+        }
+        .main-header-intro {
+            width:100%;
+        }
+        .box {
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10%;
+        }
         }   
         
          .content {
@@ -159,7 +173,7 @@
             <ul class="nav-bar">
                 <li class="nav-bar-list"><a
                 class="nav-bar-link" href="index.html">Home</a></li>
-                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">internship Experience</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="internship_experience.html">Internship Experience</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="about.html">About</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="example.html">Example</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="Contact">Contact </a></li>
@@ -171,16 +185,10 @@
     </div>
 
     <div class="main-header">
-        <h1 class="main-header-title">Resume</h1>
+        <h1 class="main-header-title"></h1>
         <img src="images/about-us.jpg" alt="about-us.jpg">
 
-        <div class="main-header-intro">
-            A resume summary is a professional statement at the top of a resume. It describes the candidate's relevant experience, skills, and achievements. The purpose of this career summary is to explain your qualifications for the job in 3-5 sentences and convince the manager to read the whole resume document.
-             Each day, we help thousands of people write resumes and cover letters, and improve their chances of landing a job.
-
-
-
-        </div>
+        
     </div>
 
     <div class="intro">
