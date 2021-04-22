@@ -4,128 +4,14 @@
     <title>Resume</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
 
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-             margin: 0;
-            font-family: sans-serif;
-            text-align: center;
-            background-color: pink;
-        }
-
-        img {
-            max-width: 80%;
-            border: 5px solid #555;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .nav-header {
-            height: 100px;
-            background: lightblue;
-            display: flex;
-        }
-
-        .nav-div {
-            margin: auto;
-        }
-
-        .logo-img {
-            width: 120px;
-            margin-left: 20px;
-            display: flex;
-        }
-
-        .search-icon {
-            margin: 30px;
-        }
-
-        .nav-bar {
-            list-style-type: none;
-            display: flex;
-        }
-
-        .nav-bar-link {
-            color: blue;
-            font-size: 24px;
-            padding: 20px;
-
-        }
-
-        .main-header {
-            background-size: cover;
-            height: : 250px;
-        }
-
-        .main-header-title {
-           text-align: center;
-            font-size: 2.5em;
-            color: blue;
-            text-transform: uppercase;
-            font-weight: normal;
-            padding-left: 20px;
-            text-shadow: 2px 2px 5px blue;
-            margin-top: 0px;
-            width: 30px;
-            background: url("images/about-us.jpg");
-        }
-
-        .main-header-intro {
-            line-height: 1.5em;
-            width: 50%;
-            margin: auto;
-            padding: 40px;
-            color: blue;
-            text-align: justify
-        }
-
-        .intro {
-            width: 60%;
-            margin: auto;
-        }
-
-        .button {
-            display: block;
-            color: white;
-            size: 2px;
-            background-color: black;
-            box-shadow: 2px 2px blue;
-            margin-left: 250px;
-            margin-right: 250px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .box {
-            width: 100%;
-            margin: auto;
-            display: flex;
-        }
-
-        .card {
-            width: 100%;
-            padding: 20px;
-            text-align: left;
-            border-radius: 1px;
-            border: 2px blue;
-            margin: 10px;
-            background-color: blue(235,241,238);
-            box-shadow: 5px 7px 9px blue;
-        }
-
-        .footer {
-            height: 40px;
-            background: lightblue;
-            padding: 5px;
-        }
-        h1 {
+        
+        .animated {
             animation-duration: 4s;
             animation-name: myslidein;
             animation-iteration-count: 3;
@@ -142,48 +28,14 @@
             }
         
         }
-        @media only screen and (max-width: 600px) {
-        .nav-header {
-            display: flex;
-            flex-direction: column;
-            background-color: purple;
-            height: 300px;
-        }
-        .nav-bar {
-            display: flex;
-            flex-direction: column;
-        }
-        .logo-images {
-            width: 40%;
-        }
-        .nav-bar-list {
-            margin-top: 2px;
-            background-color: yellow;
-            margin-right: 10px;
-        }
-        .main-header-intro {
-            width:100%;
-        }
-        .box {
-            display: inline-flex;
-            flex-direction: column;
-            margin-right: 10%;
-        }
-        }   
         
-         .content {
-            display: flex;
-            justify-content: center;
-         }
-         
-        }
     </style>
 </head>
 
 <body>
 
     <div class="nav-header">
-        <img class="logo-images" src="images/resumelogo.jpg" alt="resumelogo.jpg">
+        <img class="logo-img" src="images/resumelogo.jpg" alt="resumelogo.jpg">
         
         <div class="nav-div">
             <ul class="nav-bar">
@@ -191,17 +43,18 @@
                 class="nav-bar-link" href="index.html">Home</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="abouttheauthor.html">About The Author</a></li>
                 <li class="nav-bar-list"><a class="nav-bar-link" href="about.html">About</a></li>
-                <li class="nav-bar-list"><a class="nav-bar-link" href="example.html">Example</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="skills.html">Skills</a></li>
+                <li class="nav-bar-list"><a class="nav-bar-link" href="optionalparts.html">Optional Parts</a></li>
+
                 <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact </a></li>
             </ul>
         </div>
         <div class="search-icon">
-            <i class="fas fa-search fa-2x"></i>
+             <a href="https://www.google.com/"><i class="fas fa-search fa-2x"></i></a>
         </div>
     </div>
-        <h1>Feel Free To Contact Us!</h1>
+        <h1 class= "animated">Feel Free To Contact Us!</h1>
     <div class="main-header">
-        <h1 class="main-header-title"></h1>
         <img src="images/about-us.jpg" alt="about-us.jpg">
 
         
@@ -250,6 +103,14 @@
         <!-- End of class .card -->
 
     </div>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required="" name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required="" name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
     <!-- End of class .box -->
 
     <div class="footer">
